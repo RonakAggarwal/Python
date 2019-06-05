@@ -1,0 +1,16 @@
+import sys
+n=input();
+i=0;
+while i<len(n):
+    #if(i==len(n)-1):
+     #   break;
+    count=1;
+    j=i+1;
+    while j<len(n):
+        if n[j]==n[i]:
+            count=count+1;
+        else:
+            break;
+        j+=1;
+    print("("+str(count)+", "+n[i]+")",end=' ');
+    i=j;
